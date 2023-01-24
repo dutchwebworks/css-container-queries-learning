@@ -1,12 +1,35 @@
 body {
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
+    color: #111;
     line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3 {
+    font-weight: 300;    
+}
+
+h1,
+h2,
+h3,
+p {
     margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.box :where(h1, h2, h3){
+    color: white;
 }
 
 section {
@@ -27,6 +50,7 @@ section {
 
 header {
     grid-row-start: 1;
+    grid-column: 1 / -1;
 }
 
 main,
@@ -49,34 +73,15 @@ footer {
     grid-row-start: 3;
     display: flex;
     justify-content: space-between;
-}
-
-footer a {
     color: #333;
 }
 
-.box {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 10px;
+footer a {
+    color: inherit;
 }
 
-.box img {
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-@container (min-width: 200px){
-    .box {
-        background-color: skyblue;
-    }
-}
-
-@container (min-width: 480px) {
-    .box {
-        background-color: hotpink;
-    }
+footer a:hover {
+    color: deeppink;
 }
 
 .non-supporting {
@@ -96,4 +101,27 @@ footer a {
     .non-supporting {
         display: none;
     }
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@container (min-width: 200px){
+    .box {
+        background-color: deepskyblue;
+    }
+}
+
+@container (min-width: 480px) {
+    .box {
+        background-color: deeppink;
+    }
+}
+
+.box img {
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
