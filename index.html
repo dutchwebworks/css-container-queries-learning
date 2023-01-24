@@ -11,18 +11,20 @@
 </head>
 
 <body>    
+    <div class="non-supporting">Your current web browser doesn't support <strong>CSS Container Queries</strong></div>
+    
     <section>
         <main>
             <h1>CSS Container Query - Learning</h1>
 
             <div class="box">
-                <h2>Sub title</h2>
+                <h2>Same box class</h2>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, a molestiae! Ut consequatur necessitatibus, possimus laborum voluptates atque animi facilis.</p>
             </div>            
             
             <div class="box">
-                <h2>Sub title</h2>
+                <h2>Same box class</h2>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, a molestiae! Ut consequatur necessitatibus, possimus laborum voluptates atque animi facilis.</p>
                 
@@ -34,9 +36,9 @@
             <h2>Aside content</h2>
             
             <div class="box">
-                <img src="https://via.placeholder.com/150x150.png?text=Visit" alt="Placeholder">
+                <img src="https://via.placeholder.com/150x150.png" alt="Placeholder">
 
-                <h3>Sub title</h3>
+                <h3>Same box class</h3>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum dolorem eum excepturi molestias ea rem vel id minus dolor?</p>
                 
@@ -46,5 +48,11 @@
             </div>
         </aside>
     </section>
+
+    <script>
+        // CSS Container Queries polyfill
+        const supportsContainerQueries = "container" in document.documentElement.style;
+        if (!supportsContainerQueries) { import("https://cdn.skypack.dev/container-query-polyfill") }
+    </script>
 </body>
 </html>
