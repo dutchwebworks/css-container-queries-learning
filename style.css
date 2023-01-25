@@ -76,10 +76,12 @@ footer {
     color: #333;
 }
 
+.non-supporting a,
 footer a {
     color: inherit;
 }
 
+.non-supporting a:hover,
 footer a:hover {
     color: deeppink;
 }
