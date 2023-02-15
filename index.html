@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="img/favicon.png" type="image/png">
+   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +20,7 @@
 <body>    
     <div class="non-supporting">Currently your web browser doesn't support <a href="https://caniuse.com/?search=container%20queries" target="_blank">CSS Container Queries</a></div>
 
-    <section class="wrapper">
+    <div class="wrapper">
         <header>
             <h1>CSS Container Query - Learning</h1>   
             
@@ -30,52 +30,74 @@
         <main>
             <h2>Main content</h2>
 
-            <div class="box">
-                <img src="img/futuristic-globe.jpg" class="box__image" width="300" height="170" alt="Futuristic globe">
+            <section class="articles">
+                <article class="box">
+                    <a href="#"><img src="img/ux.webp" class="box__image" width="300" height="195" alt="UX design"></a>
 
-                <p class="box__tag">UX Design</p>
-                
-                <div class="box__body">
-                    <h3 class="box__title">Learn how to create a perfect button in CSS</h3>
-
-                    <p class="box__read-more"><a href="#">View article</a></p>
-                </div>                
-            </div>
-            
-            <div class="box">
-                <img src="img/coder.jpeg" class="box__image" width="300" height="170" alt="Hands on a keyboard">
-
-                <p class="box__tag">Code</p>
-
-                <div class="box__body">                   
-                    <h3 class="box__title">Become the best coder you can be!</h3>
+                    <p class="box__tag">UX Design</p>
                     
-                    <p class="box__read-more"><a href="#">View article</a></p>
-                </div>
-            </div>
+                    <div class="box__body">
+                        <h3 class="box__title"><a href="#">Learn how to create the perfect user journey</a></h3>
+
+                        <p class="box__date">5/1/23</p>
+
+                        <p class="box__read-more"><a href="#">View article</a></p>
+                    </div>                
+                </article>
+                
+                <article class="box">
+                    <a href="#"><img src="img/developer.webp" class="box__image" width="300" height="195" alt="A web developer"></a>
+
+                    <p class="box__tag">Code</p>
+
+                    <div class="box__body">                   
+                        <h3 class="box__title"><a href="#">Becoming a better web developer</a></h3>
+
+                        <p class="box__date">3/11/21</p>
+                        
+                        <p class="box__read-more"><a href="#">View article</a></p>
+                    </div>
+                </article>
+                
+                <article class="box">
+                    <a href="#"><img src="img/webbrowsers.webp" class="box__image" width="300" height="195" alt="Web browser icons"></a>
+
+                    <p class="box__tag">Browsers</p>
+
+                    <div class="box__body">                   
+                        <h3 class="box__title"><a href="#">New CSS web browser features you need to know</a></h3>
+
+                        <p class="box__date">24/8/23</p>
+                        
+                        <p class="box__read-more"><a href="#">View article</a></p>
+                    </div>
+                </article>
+            </section>
         </main>
 
         <aside>
             <h2>Aside content</h2>
             
-            <div class="box">
-                <img src="img/interface-futuristic.webp" class="box__image" width="300" height="170" alt="Futuristic sign">
+            <article class="box">
+                <a href="#"><img src="img/seo.webp" class="box__image" width="300" height="195" alt="SEO sign with a hand"></a>
 
                 <p class="box__tag">SEO</p>
 
                 <div class="box__body">
-                    <h3 class="box__title">The 2023 best practices</h3>
+                    <h3 class="box__title"><a href="#">Best SEO practices in 2023</a></h3>
+
+                    <p class="box__date">11/2/22</p>
                     
                     <p class="box__read-more"><a href="#">View article</a></p>
                 </div>
-            </div>
+            </article>
         </aside>
 
         <footer>
             <div>&copy; Dutchwebworks, januari 2023</div>
             <div><a href="https://github.com/dutchwebworks/css-container-queries-learning" target="_blank">View on Github</a></div>
         </footer>
-    </section>
+    </div>
 
     <script>
         // CSS Container Queries polyfill

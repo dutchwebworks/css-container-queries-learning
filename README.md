@@ -2,4 +2,4 @@
 
 *By Dennis Burger, januari 2023*
 
-A demo of CSS Container Queries
+Just open the `index.html` in a web browser to view the demo
