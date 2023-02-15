@@ -91,7 +91,8 @@ footer a,
 
 footer a:hover,
 .box a:hover
-.non-supporting a:hover {
+.non-supporting a:hover,
+.box__read-more a:hover {
     color: var(--secondary-color);
 }
 
@@ -199,6 +200,10 @@ footer a:hover,
     text-decoration: none;
 }
 
+.box__title a:hover {
+    color: var(--secondary-color);
+}
+
 .box__date {
     margin: 0;
     color: var(--body-alt-color);
@@ -213,10 +218,10 @@ footer a:hover,
     text-decoration: underline;    
 }
 
-.box__read-more a::after {
-    content: ">";
+.box__read-more a::before {
+    content: "\21AA";
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Box container query
