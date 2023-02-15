@@ -1,9 +1,19 @@
+/* Custom properties
+----------------------------------------- */
+
+:root {
+    --primary-color: deepskyblue;
+    --secondary-color: deeppink;
+    --body-color: #111;
+    --light-color: #eee;
+}
+
 /* Common
 ----------------------------------------- */
 
 body {
     font-family: Roboto, sans-serif;
-    color: #111;
+    color: var(--body-color);
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -25,10 +35,12 @@ p {
 h1 {
     font-size: 3rem;
     margin: 0;
+    color: var(--secondary-color);
 }
 
 h2 {
     font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h3 {
@@ -45,7 +57,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #eee;
+    background-color: var(--light-color);
 }
 
 @media (min-width: 800px) {
@@ -89,7 +101,7 @@ footer {
     grid-row-start: 3;
     display: flex;
     justify-content: space-between;
-    color: #333;
+    color: var(--body-color);
 }
 
 .non-supporting a,
@@ -98,8 +110,9 @@ footer a {
 }
 
 .non-supporting a:hover,
-footer a:hover {
-    color: deeppink;
+footer a:hover,
+.box a:hover {
+    color: var(--secondary-color);
 }
 
 /* Non-supporting banner
@@ -110,7 +123,7 @@ footer a:hover {
     top: 0;
     left: 0;
     right: 0;
-    color: #333;
+    color: var(--body-color);
     background-color: yellow;
     padding: 10px;
     font-size: 14px;
@@ -129,7 +142,7 @@ footer a:hover {
 
 .box {    
     position: relative;
-    color: #333;
+    color: var(--body-color);
     background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -147,7 +160,7 @@ footer a:hover {
     position: absolute;
     top: 10px;
     left: 0;
-    background-color: deepskyblue;
+    background-color: var(--primary-color);
     color: white;
     font-weight: 700;
     margin: 0;
@@ -165,7 +178,7 @@ footer a:hover {
 }
 
 .box__read-more a {
-    color: deepskyblue;
+    color: var(--primary-color);
     text-decoration: underline;    
 }
 
@@ -222,6 +235,6 @@ footer a:hover {
     }
 
     .box__body {
-        padding: 40px 0;
+        padding: 30px 0;
     }
 }
